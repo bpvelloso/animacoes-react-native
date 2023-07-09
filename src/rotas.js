@@ -7,11 +7,13 @@ const Tab = createNativeStackNavigator();
 import Onboarding from './telas/Onboarding';
 import Principal from './telas/Principal';
 import Detalhes from './telas/Detalhes';
+import SplashScreenAluramed from './telas/SplashScreen';
 
 export default function Rotas() {
   return (
     <NavigationContainer>
       <Tab.Navigator>
+        <Tab.Screen name="SplashScreenAluramed" component={SplashScreenAluramed} options={{ headerShown: false }}/>
         <Tab.Screen name="Onboarding" component={Onboarding} options={{ headerShown: false }}/>
         <Tab.Screen name="Principal" component={Principal} options={{ headerShown: false }}/>
         <Tab.Screen name="Detalhes" component={Detalhes}/>
